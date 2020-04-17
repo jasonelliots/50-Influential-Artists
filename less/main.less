@@ -1,0 +1,86 @@
+
+body{
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.bigContainer {
+    width: 85%; 
+    margin: 0 auto; 
+
+}
+
+.title{ 
+    position: relative; 
+    width: 100%; 
+    .columnflex; 
+    width: 80%;
+   height: 500px;
+   margin: 0 auto;
+   margin-bottom: 2%; 
+
+    .topImage {
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        left: 0;
+        right: 0%;
+        z-index: 0;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .text{
+        position: relative;
+        z-index: 1;
+        .columnflex; 
+
+        h1 {
+            color: white; 
+            font-size: 3rem; 
+            font-weight: 800; 
+        }
+
+        .button {
+            .button(white, black); 
+            margin: 3%; 
+        }
+     }
+     
+}
+
+.artists-container {
+    width: 80%; 
+    .centerflex;
+    align-items:flex-start; 
+    margin: 0 auto;
+    
+    @media (max-width: 700px){
+        .columnflex; 
+    }
+
+    .artist {
+        .columnflex;
+        width: 40%;
+        padding: 2% 4%; 
+
+        @media (max-width: 700px){
+            .columnflex;
+        } 
+
+
+        .artistimage {
+            object-fit: fill; 
+            width: 100%; 
+            padding-bottom: 2%; 
+        }
+
+        .bio {
+            text-align: center;
+            line-height: 1.2; 
+            padding: 2%; 
+        }
+         
+    }
+}
